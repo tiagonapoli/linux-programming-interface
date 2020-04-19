@@ -4,4 +4,4 @@ set -euo pipefail
 
 SCRIPT=`realpath $0`
 SCRIPTPATH=`dirname $SCRIPT`
-gcc $@ $SCRIPTPATH/book-src/libtlpi.a
+gcc -std=c99 $@ $SCRIPTPATH/book-src/libtlpi.a
